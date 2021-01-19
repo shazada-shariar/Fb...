@@ -99,10 +99,10 @@ def masuk():
 	os.system('clear')
 	print logo
 	print "\33[1;33m╔══════════════════════════════════════════╗"
-	print "\33[1;33m║[\033[1;31;1m01\33[1;33m]\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m02\33[1;33m]\033[37;1mLogin Menggunakan Token Facebook      \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m03\33[1;33m]\033[37;1mAmbil Token                           \33[1;33m║"
-	print "\33[1;33m║[\033[1;31;1m00\33[1;33m]\033[37;1mKeluar                                \33[1;33m║"
+	print "\33[1;33m║[\033[1;31;1m01\33[1;33m]\033[37;1mLogin Facebook (Email/Id FB) \33[1;33m"
+	print "\33[1;33m║[\033[1;31;1m02\33[1;33m]\033[37;1mLogin With Fb Token Facebook      \33[1;33m"
+	print "\33[1;33m║[\033[1;31;1m03\33[1;33m]\033[37;1mEmail Token                           \33[1;33m"
+	print "\33[1;33m║[\033[1;31;1m00\33[1;33m]\033[37;1mExit Script SULTAN SHARIAR                                \33[1;33m"
 	print "\33[1;33m╚══════════════════════════════════════════╝"
 	pilih_masuk()
 
@@ -367,8 +367,8 @@ def pilih_indo():
 		print("\r\033[1;97m{\033[1;93m➹\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
 
 	print "\n\033[1;31;1m=========================================="
-        print "\n\033[1;96mJANGAN MENYALAH GUNAKAN SCRIPT INI YA BOSS"
-        print "\n\033[1;33mBY RikoMrko"
+        print "\n\033[1;96mSHARIAR KHAN FB HACK"
+        print "\n\033[1;33mBY *_SULTAN_*"
 	print "\n\033[37;1m=========================================="
 	
 ##### MAIN INDONESIA #####
